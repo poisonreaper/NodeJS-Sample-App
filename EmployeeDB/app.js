@@ -81,6 +81,11 @@ app.get('/employee/new', function(req, res) {
     });
 });
 
+//new employee
+app.get('/callback', function(req, res) {
+    res.send(200);
+});
+
 //save new employee
 app.post('/employee/new', function(req, res){
     employeeProvider.save({
